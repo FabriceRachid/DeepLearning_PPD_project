@@ -110,7 +110,7 @@ jupyter notebook
 ├── notebooks/
 │    └── models/
 │   │      └── best_vgg16_model.h5
-│   └── training_and_evaluation.ipynb
+│   └── vgg16_pulmonary_4classes.ipynb
 ├── README.md
 └── requirements.txt
 ```
