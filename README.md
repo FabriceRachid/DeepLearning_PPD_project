@@ -76,7 +76,7 @@ The final model achieved a **test accuracy of ~86%**, showing strong performance
 
 ---
 
-## ▶️ How to Run
+##  How to Run
 
 1. Clone the repository
 
