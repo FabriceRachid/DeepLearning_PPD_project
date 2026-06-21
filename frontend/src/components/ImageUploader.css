@@ -1,0 +1,139 @@
+.uploader-wrapper {
+  width: 100%;
+}
+
+.upload-zone {
+  border: 2px dashed #334155;
+  border-radius: 14px;
+  padding: 48px 24px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.35s ease;
+  background: rgba(15, 23, 42, 0.4);
+  position: relative;
+  overflow: hidden;
+}
+
+.upload-zone::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(59, 130, 246, 0.03), rgba(6, 182, 212, 0.03));
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+
+.upload-zone:hover {
+  border-color: #3b82f6;
+  background: rgba(15, 23, 42, 0.6);
+}
+
+.upload-zone:hover::before {
+  opacity: 1;
+}
+
+.upload-zone.drag-over {
+  border-color: #06b6d4;
+  background: rgba(6, 182, 212, 0.05);
+  transform: scale(1.01);
+}
+
+.upload-zone.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.upload-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  position: relative;
+  z-index: 1;
+}
+
+.upload-icon-wrap {
+  width: 72px;
+  height: 72px;
+  background: rgba(59, 130, 246, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #3b82f6;
+  transition: all 0.35s ease;
+}
+
+.upload-zone:hover .upload-icon-wrap {
+  background: rgba(59, 130, 246, 0.15);
+  transform: scale(1.05);
+}
+
+.upload-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.upload-subtitle {
+  font-size: 0.88rem;
+  color: #64748b;
+}
+
+.upload-divider {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #475569;
+  font-size: 0.8rem;
+  width: 100%;
+  max-width: 200px;
+}
+
+.upload-divider::before,
+.upload-divider::after {
+  content: '';
+  flex: 1;
+  height: 1px;
+  background: #334155;
+}
+
+.browse-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 24px;
+  background: rgba(59, 130, 246, 0.12);
+  border: 1px solid rgba(59, 130, 246, 0.25);
+  border-radius: 10px;
+  color: #60a5fa;
+  font-size: 0.88rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  font-family: 'Inter', sans-serif;
+}
+
+.upload-zone:hover .browse-btn {
+  background: rgba(59, 130, 246, 0.18);
+}
+
+.upload-formats {
+  font-size: 0.78rem;
+  color: #475569;
+  margin-top: 4px;
+}
+
+.upload-xray-note {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: rgba(6, 182, 212, 0.08);
+  border: 1px solid rgba(6, 182, 212, 0.15);
+  border-radius: 8px;
+  font-size: 0.78rem;
+  color: #06b6d4;
+  margin-top: 8px;
+}

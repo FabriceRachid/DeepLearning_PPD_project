@@ -18,6 +18,19 @@ models/*.keras
 Pulmonary_Disease_Detection/notebooks/models/*.h5
 Pulmonary_Disease_Detection/notebooks/models/*.keras
 
+# Dependencies
+node_modules/
+
 # OS files
 .DS_Store
 Thumbs.db
+
+# Runtime uploads
+backend/uploads/
+
+# History
+history.json
+
+# Screenshots
+screenshot_*.png
+HistoryPanel.js
